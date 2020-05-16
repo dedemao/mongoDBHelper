@@ -1,19 +1,43 @@
 # mongoDBHelper
 A simple mongoDB library for PHP7
 
-# How to use
+# Installation
+The preferred method of installing this library is with Composer by running the following from your project root:
 ```
-include "mongoDBHelper.php"
+$ composer require dedemao/mongodb
+```
 
+# How to use
+
+Demo 1：
+
+```
+require 'vendor/autoload.php';
 
 $conf['host'] = '127.0.0.1';
 $conf['port'] = '27017';
-$conf['user'] = 'xxx';
-$conf['pass'] = 'xxx';
+$conf['user'] = '';
+$conf['pass'] = '';
 $conf['dbname'] = 'test';
 $conf['collectionname'] = 'demo';
-$mongo = new MongoDBHelper($conf);
+$mongo = new dedemao\mongodb\MongoDBHelper($conf);
+```
 
+Demo 2：
+```
+include "src/mongoDBHelper.php";
+
+$conf['host'] = '127.0.0.1';
+$conf['port'] = '27017';
+$conf['user'] = '';
+$conf['pass'] = '';
+$conf['dbname'] = 'test';
+$conf['collectionname'] = 'demo';
+$mongo = new dedemao\mongodb\MongoDBHelper($conf);
+```
+
+CURD:
+```
 //Creat：
 $result = $mongo->insertOne(['name'=>'John','age'=>'18']);
 $result = $mongo->insertMany([['name'=>'John','age'=>'18'],['name'=>'Jay','age'=>'20']]);
