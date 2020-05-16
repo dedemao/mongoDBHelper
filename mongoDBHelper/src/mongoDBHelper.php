@@ -1,4 +1,6 @@
 <?php
+namespace dedemao\mongodb;
+
 class MongoDBHelper
 {
     private static $_manager = null; //所有数据库实例共用,避免重复连接数据库
