@@ -1,5 +1,6 @@
 <?php
 namespace dedemao\mongodb;
+use MongoDB;
 
 class MongoDBHelper
 {
