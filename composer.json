@@ -1,0 +1,13 @@
+{
+    "name": "dedemao/mongodb",
+    "description": "A simple mongoDB library for PHP7",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dedemao",
+            "email": "884358@qq.com"
+        }
+    ],
+    "require": {}
+}
